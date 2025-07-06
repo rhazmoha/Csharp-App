@@ -30,7 +30,7 @@ class Program
         //convertir le match en nombre
         int num = int.Parse(match.Value);
 
-        num *= 2;
+        num *= 3;
 
         return num.ToString();
 
