@@ -5,16 +5,17 @@ using static System.Console;
 
 class Program
 {
+    static string input = @" ""text"" <span class=""middle"">""text""</span>";
     static void Main()
     {
         try
         {
-            string input = "before <b>first before</b> before <b>before before</b>";
-            string outerPattern = @"<b>.*?</b>";
-            var outerRegex = new Regex(outerPattern, RegexOptions.Singleline);
 
-            string result = outerRegex.Replace(input, MatchReplace);
-        
+
+            string outerPettern = @"""(\w+)""";
+
+            string result = Regex.Replace(input, outerPettern, MatchReplace);
+
             WriteLine(result);
 
 
@@ -29,10 +30,19 @@ class Program
 
     static string MatchReplace(Match match)
     {
-        string innerPattern = @"before";
-        var innerRegex = new Regex(innerPattern);
+        string innerPattern = @$"(?<=<.*){match.Value}(?=.*>)";
 
-        return innerRegex.Replace(match.Value, @"after");
+        bool ismatch = Regex.IsMatch(input, innerPattern);
+
+        if (ismatch)
+        {
+            return match.Value;
+        }
+        else
+        {
+            return $"*{match.Groups[1].Value}*";
+        }
+
 
 
     }
