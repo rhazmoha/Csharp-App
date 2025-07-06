@@ -9,13 +9,14 @@ class Program
     {
         try
         {
+            string input = "before <b>first before</b> before <b>before before</b>";
+            string outerPattern = @"<b>.*?</b>";
+            var outerRegex = new Regex(outerPattern, RegexOptions.Singleline);
 
-            string pattern = @"\d+";
-            string input = "10 100 1000 kjkfglk 50 99";
-
-            string result = Regex.Replace(input, pattern, new MatchEvaluator(MatchReplace));
-
+            string result = outerRegex.Replace(input, MatchReplace);
+        
             WriteLine(result);
+
 
         }
         catch (Exception ex)
@@ -25,14 +26,14 @@ class Program
         }
 
     }
-    
-    static string MatchReplace(Match match) {
-        //convertir le match en nombre
-        int num = int.Parse(match.Value);
 
-        num *= 3;
+    static string MatchReplace(Match match)
+    {
+        string innerPattern = @"before";
+        var innerRegex = new Regex(innerPattern);
 
-        return num.ToString();
+        return innerRegex.Replace(match.Value, @"after");
+
 
     }
 }

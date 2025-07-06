@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dfc5e620f1d75a96ed758b1ffd5cd8aae46886c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c64aa882fa27a868c43cfe6a96412c9b08c6f55")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
