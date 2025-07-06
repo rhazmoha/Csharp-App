@@ -5,18 +5,20 @@ using static System.Console;
 
 class Program
 {
-    static string input = @" ""text"" <span class=""middle"">""text""</span>";
+     
     static void Main()
     {
         try
         {
+            string input = @"<b>I●like●<b><b>bold</b>●and <i>italic</i>●fonts<b>";
 
+            string pattern = @"<[^<>]*>";
 
-            string outerPettern = @"""(\w+)""";
+            string[] spliArray = new Regex(pattern).Split(input);
 
-            string result = Regex.Replace(input, outerPettern, MatchReplace);
+            Array.ForEach(spliArray, item => WriteLine(item));
+            
 
-            WriteLine(result);
 
 
         }
@@ -30,20 +32,7 @@ class Program
 
     static string MatchReplace(Match match)
     {
-        string innerPattern = @$"(?<=<.*){match.Value}(?=.*>)";
-
-        bool ismatch = Regex.IsMatch(input, innerPattern);
-
-        if (ismatch)
-        {
-            return match.Value;
-        }
-        else
-        {
-            return $"*{match.Groups[1].Value}*";
-        }
-
-
+        return "match";
 
     }
 }
