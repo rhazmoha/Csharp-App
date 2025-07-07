@@ -17,6 +17,8 @@ class Program
             string[] spliArray = new Regex(pattern).Split(input);
 
             Array.ForEach(spliArray, item => WriteLine(item));
+
+            
             
 
 
