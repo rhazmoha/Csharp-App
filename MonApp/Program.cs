@@ -12,21 +12,23 @@ class Program
     {
         try
         {
-            /* string input = @"<b>I●like●<b><b>bold</b>●and <i>italic</i>●fonts<b>";
+            string input = File.ReadAllText("contenu.txt");
 
-            string pattern = @"<[^<>]*>";
+            string pattern = @"^(?=.*file).*";
 
-            string[] spliArray = new Regex(pattern).Split(input);
+            string[] spliArray = Regex.Split(input, pattern);
 
-            Array.ForEach(spliArray, item => WriteLine(item)); */
+            var matches = Regex.Matches(input, pattern, RegexOptions.Multiline);
+
+            foreach (Match item in matches)
+            {
+                WriteLine($"{item.Value}");
+            }
+
+           
 
 
-            var task = DoTask();
-            WriteLine("end of program");
-
-            WriteLine(task.Result);
-
-            ReadKey();
+        
 
 
 
