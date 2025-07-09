@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using static System.Console;
 using System.Threading.Tasks;
+using System.IO;
 
 
 class Program
@@ -49,7 +50,10 @@ class Program
     async static Task<string> DoTask()
     {
         await Task.Delay(5000);
-        return "Task done";
+        string output = "";
+
+        output = File.ReadAllText("contenu.txt");
+        return output;
     }
 
     
