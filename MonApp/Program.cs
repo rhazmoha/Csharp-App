@@ -12,26 +12,8 @@ class Program
     {
         try
         {
-            string input = File.ReadAllText("contenu.txt");
-
-            string pattern = @"^(?=.*file).*";
-
-            string[] spliArray = Regex.Split(input, pattern);
-
-            var matches = Regex.Matches(input, pattern, RegexOptions.Multiline);
-
-            foreach (Match item in matches)
-            {
-                WriteLine($"{item.Value}");
-            }
-
-           
-
-
-        
-
-
-
+            string res = LogLine.Reformat("[INFO]: Operation completed");
+            WriteLine(res);
 
 
         }
