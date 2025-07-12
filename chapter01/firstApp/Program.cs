@@ -1,4 +1,4 @@
-//#error version
+
 using System;
 using static System.Console;
 
