@@ -4,41 +4,35 @@ using static System.Console;
 using System.Threading.Tasks;
 using System.IO;
 
-
-class Program
+namespace MonApp
 {
-
-    static void Main()
+    class Program
     {
-        try
-        {
-           
 
-        }
-        catch (Exception ex)
+        static void Main()
         {
-            WriteLine(ex.Message);
+
+            WriteLine(Environment.CurrentDirectory);
+            WriteLine(Environment.OSVersion.VersionString);
 
         }
 
+        static string MatchReplace(Match match)
+        {
+            return "match";
+
+        }
+
+        async static Task<string> DoTask()
+        {
+            await Task.Delay(5000);
+            string output = "";
+
+            output = File.ReadAllText("contenu.txt");
+            return output;
+        }
+
+
     }
 
-    static string MatchReplace(Match match)
-    {
-        return "match";
-
-    }
-
-    async static Task<string> DoTask()
-    {
-        await Task.Delay(5000);
-        string output = "";
-
-        output = File.ReadAllText("contenu.txt");
-        return output;
-    }
-
-    
 }
-
-
