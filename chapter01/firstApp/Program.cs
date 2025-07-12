@@ -8,8 +8,15 @@ namespace firstApp
     {
         static void Main(string[] args)
         {
-            WriteLine("hello world");
-            int x = 10;
+            //this is a comment
+            /* block
+             hello cs
+            */
+            #region variables  to sum
+
+            
+
+            #endregion
         }
     }
 }
