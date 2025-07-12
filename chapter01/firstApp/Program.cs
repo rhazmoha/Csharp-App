@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using System;
+using static System.Console;
+
+namespace firstApp
+{
+    class firstApp
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("hello world");
+        }
+    }
+}
