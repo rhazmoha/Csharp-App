@@ -8,7 +8,8 @@ namespace firstApp
     {
         static void Main(string[] args)
         {
-            
+            int x = 10;
+            WriteLine(x);
 
         }
 
