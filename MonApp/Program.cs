@@ -12,9 +12,7 @@ class Program
     {
         try
         {
-            string res = LogLine.Reformat("[INFO]: Operation completed");
-            WriteLine(res);
-
+           
 
         }
         catch (Exception ex)
