@@ -2,6 +2,7 @@
 using System;
 using System.Linq.Expressions;
 using static System.Console;
+using System.Xml;
 
 namespace firstApp
 {
@@ -9,19 +10,10 @@ namespace firstApp
     {
         static void Main(string[] args)
         {
-            object height = 1.88;
-            object name = null;
+            var x = 56d;
+            WriteLine($"{x.GetType()}");
 
-            int? length2 = ((string?)name)?.Length;
-            WriteLine(length2);
-
-
-
-
-
-
-
-
+            
 
         }
 
