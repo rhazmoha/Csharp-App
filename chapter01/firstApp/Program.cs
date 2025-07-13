@@ -1,5 +1,6 @@
 
 using System;
+using System.Linq.Expressions;
 using static System.Console;
 
 namespace firstApp
@@ -8,17 +9,20 @@ namespace firstApp
     {
         static void Main(string[] args)
         {
+            object height = 1.88;
+            object name = null;
 
-            uint naturalNumber = 35;
-
-            int integerNumber = 0x7f_ff_ff_ff;
-
-            WriteLine(integerNumber);
+            int? length2 = ((string?)name)?.Length;
+            WriteLine(length2);
 
 
-            
-            
-           
+
+
+
+
+
+
+
         }
 
     }
