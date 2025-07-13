@@ -9,11 +9,13 @@ namespace firstApp
         static void Main(string[] args)
         {
 
-            var person = new { FirstName = "hamid", age = 100 };
+            uint naturalNumber = 35;
 
-            string json = $"hello {"rhaz"}";
+            int integerNumber = 0x7f_ff_ff_ff;
 
-            WriteLine(json);
+            WriteLine(integerNumber);
+
+
             
             
            
