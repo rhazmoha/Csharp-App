@@ -8,9 +8,15 @@ namespace firstApp
     {
         static void Main(string[] args)
         {
-            int x = 10;
-            WriteLine(x);
 
+            var person = new { FirstName = "hamid", age = 100 };
+
+            string json = $"hello {"rhaz"}";
+
+            WriteLine(json);
+            
+            
+           
         }
 
     }
