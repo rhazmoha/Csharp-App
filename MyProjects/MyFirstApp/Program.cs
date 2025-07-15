@@ -4,33 +4,33 @@ using static System.Console;
 using System.Globalization;
 
 
-/* class Person
+class Person
 {
     public string? FirstName;
     public int Age;
 
-    public DateTime dateOfBirth;
+    public DateTime DateOfBirth;
 
-    public Person()
+    public Person(string firstName, int age, DateTime dateOfBirth)
     {
-
+        FirstName = firstName;
+        Age = age;
+        DateOfBirth = dateOfBirth;
     }
 
-} */
+    public override string ToString()
+    {
+        return $"{this.FirstName} has {this.Age} and his date of birth {this.DateOfBirth:dd/MM/yyyy}";
+    }
+
+}
 
 internal class Program
 {
     private static void Main(string[] args)
     {
 
-        double d = 0.6;
-        int i =  65025;
-        WriteLine($"{d:e}");
-        
-        
-
-
-
-
+        Person p = new("hamid", 99, DateTime.Today);
+        WriteLine(p);
     }
 }
