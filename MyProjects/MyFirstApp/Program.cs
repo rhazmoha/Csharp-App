@@ -30,12 +30,13 @@ internal class Program
     private static void Main(string[] args)
     {
 
-        Console.Write("Type your first name and press ENTER: ");
-        string? firstName = ReadLine();
-
-        Console.Write("Type your age and press ENTER: ");
-        string age = ReadLine()!;
-
-        Console.WriteLine($"Hello {firstName}, you look good for {age}.");
+        int[] nums = { 1, 5, 4, 7, 4, 9, 8 };
+        foreach (int num in nums)
+        {
+            if (num % 2 == 0)
+            {
+                WriteLine(num);
+            }
+        }
     }
 }
