@@ -30,7 +30,12 @@ internal class Program
     private static void Main(string[] args)
     {
 
-        Person p = new("hamid", 99, DateTime.Today);
-        WriteLine(p);
+        Console.Write("Type your first name and press ENTER: ");
+        string? firstName = ReadLine();
+
+        Console.Write("Type your age and press ENTER: ");
+        string age = ReadLine()!;
+
+        Console.WriteLine($"Hello {firstName}, you look good for {age}.");
     }
 }
