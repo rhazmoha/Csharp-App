@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/Csharp-App/MyProjects/MyFirstApp/MyFirstApp.csproj",
-      "projectName": "MyFirstApp",
-      "projectPath": "/workspaces/Csharp-App/MyProjects/MyFirstApp/MyFirstApp.csproj",
+      "projectUniqueName": "/workspaces/Csharp-App/chapter03/operators/operators.csproj",
+      "projectName": "operators",
+      "projectPath": "/workspaces/Csharp-App/chapter03/operators/operators.csproj",
       "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/Csharp-App/MyProjects/MyFirstApp/obj/",
+      "outputPath": "/workspaces/Csharp-App/chapter03/operators/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/codespace/.nuget/NuGet/NuGet.Config"
