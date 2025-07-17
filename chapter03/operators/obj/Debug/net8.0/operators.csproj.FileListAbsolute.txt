@@ -1,0 +1,15 @@
+/workspaces/Csharp-App/chapter03/operators/bin/Debug/net8.0/operators
+/workspaces/Csharp-App/chapter03/operators/bin/Debug/net8.0/operators.deps.json
+/workspaces/Csharp-App/chapter03/operators/bin/Debug/net8.0/operators.runtimeconfig.json
+/workspaces/Csharp-App/chapter03/operators/bin/Debug/net8.0/operators.dll
+/workspaces/Csharp-App/chapter03/operators/bin/Debug/net8.0/operators.pdb
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/operators.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/operators.AssemblyInfoInputs.cache
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/operators.AssemblyInfo.cs
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/operators.csproj.CoreCompileInputs.cache
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/operators.sourcelink.json
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/operators.dll
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/refint/operators.dll
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/operators.pdb
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/operators.genruntimeconfig.cache
+/workspaces/Csharp-App/chapter03/operators/obj/Debug/net8.0/ref/operators.dll
