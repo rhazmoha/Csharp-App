@@ -1,18 +1,40 @@
-﻿internal class Program
+﻿using System.Text.RegularExpressions;
+internal class Program
 {
     private static void Main(string[] args)
     {
-        #region Exploring unary operators
+        WriteLine($"{IsUpperCase("HELL11O")}");
 
-        int a = 3, b;
+    }
 
-        b = a++;
-        WriteLine($"a is {a}, b is {b}");
+    static bool IsUpperCase(string text)
+    {
+        
+        return !Regex.IsMatch(text, @"[a-z]");
+        
 
-        int c = 3;
-        int d = ++c; // Prefix means increment c before assigning it.
-        WriteLine($"c is {c}, d is {d}");
+    }
 
-        #endregion
+
+    /* static bool IsUpperCase(string text)
+    {
+        foreach (char c in text)
+        {
+            if (char.IsLetter(c))
+            {
+                if (char.IsLower(c))
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+ */
+    static bool DoStuff()
+    {
+        WriteLine("I am doing some stuff.");
+        return true;
     }
 }
