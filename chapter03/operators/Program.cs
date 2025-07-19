@@ -4,16 +4,18 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        WriteLine(Vowel("a\\n"));
+        
 
     }
 
-     public static bool Vowel( string s)
+    #region my functions
+
+    public static bool Vowel(string s)
     {
-        
+
         return Regex.IsMatch(s, @"^[aeiou]\z", RegexOptions.IgnoreCase);
-        
-        
+
+
     }
 
     public static string Explode(string s)
@@ -77,4 +79,6 @@ internal class Program
         WriteLine("I am doing some stuff.");
         return true;
     }
+
+    #endregion
 }
