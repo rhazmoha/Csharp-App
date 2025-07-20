@@ -5,11 +5,30 @@ internal class Program
     private static void Main(string[] args)
     {
 
+        long r = 0b_101000101010001100100111010100101010;
+        int s = (int)r;
 
-        WriteLine(CreatePhoneNumber(new int[]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }));
+        Console.WriteLine($"{r,38:B38} = {r}");
+        Console.WriteLine($"{s,38:B32} = {s}");
+
 
 
     }
+
+    static string CheckSwitch(int[] values) => values switch
+    {
+        [] => "empty array",
+        [1, 2, _, 10] => "Contains 1, 2, any single number, 10.",
+        [1, 2, .., 10] => "Contains 1, 2, any range including empty, 10.",
+        [1, 2] => "Contains 1 then 2.",
+        [int item1, int item2, int item3] => $"Contains {item1} then {item2} then {item3}.",
+        [0, _] => "Starts with 0, then one other number.",
+        [0, ..] => "Starts with 0, then any range of numbers.",
+        [2, .. int[] others] => $"Starts with 2, then {others.Length} more numbers.",
+        [..] => "Any items in any order.",
+
+    };
+
 
     #region my functions
     public static string CreatePhoneNumber(int[] numbers)
