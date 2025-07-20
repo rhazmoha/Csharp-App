@@ -1,15 +1,17 @@
 ﻿using System.Text.RegularExpressions;
 using static System.Console;
+using static System.Convert;
 internal class Program
 {
     private static void Main(string[] args)
     {
 
-        long r = 0b_101000101010001100100111010100101010;
-        int s = (int)r;
+        WriteLine($"{LowercaseCountCheck("abcABC123")}");
+        
 
-        Console.WriteLine($"{r,38:B38} = {r}");
-        Console.WriteLine($"{s,38:B32} = {s}");
+
+
+
 
 
 
@@ -31,6 +33,12 @@ internal class Program
 
 
     #region my functions
+
+    public static int LowercaseCountCheck(string s)
+    {
+        return Regex.Matches(s, @"[a-z]").Count;
+        
+  }
     public static string CreatePhoneNumber(int[] numbers)
     {
         string phoneNumber = "";
