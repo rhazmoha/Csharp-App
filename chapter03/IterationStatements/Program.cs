@@ -6,10 +6,24 @@ internal class Program
     private static void Main(string[] args)
     {
 
-        WriteLine($"{LowercaseCountCheck("abcABC123")}");
+        /* byte[] binaryObject = new byte[128];
+
+        Random.Shared.NextBytes(binaryObject);
+        WriteLine("Binary Object as bytes:");
+
+        for (int index = 0; index < binaryObject.Length; index++)
+        {
+            Write($"{binaryObject[index]:X2} ");
+        }
+        WriteLine();
+
+        string encoded = ToBase64String(binaryObject);
+        WriteLine($"Binary Object as Base64: {encoded}"); */
+
+        byte[] file = File.ReadAllBytes("wpf.png");
+        WriteLine(file.Length);
         
-
-
+        
 
 
 
