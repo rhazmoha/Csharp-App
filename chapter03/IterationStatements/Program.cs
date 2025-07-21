@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using static System.Console;
 using static System.Convert;
+using System.Linq;
 internal class Program
 {
     private static void Main(string[] args)
@@ -20,19 +21,7 @@ internal class Program
         string encoded = ToBase64String(binaryObject);
         WriteLine($"Binary Object as Base64: {encoded}"); */
 
-        byte[] file = File.ReadAllBytes("wpf.png");
-        string encoded = ToBase64String(file);
-        WriteLine($"{encoded}");
-
-        byte[] file2 = FromBase64String(encoded);
-        File.WriteAllBytes("wpf2.png", file2);
-        WriteLine("end of program");
-
-        
-        
-
-
-
+        WriteLine($"{Maskify("616")}");
 
 
     }
@@ -54,11 +43,33 @@ internal class Program
 
     #region my functions
 
+    public static string Maskify(string cc)
+    {
+        int charsNum = cc.Length;
+
+        if (charsNum > 4)
+        {
+            string hashes = new string('#', charsNum - 4);
+
+            return hashes + cc.Substring(charsNum - 4);
+        }
+
+        return cc;
+    }
+    public static int FindShort(string s)
+    {
+        string[] words = s.Split(new char[] { ' ' });
+
+
+        var lengths = words.Select(word => word.Length);
+
+        return lengths.Min();
+    }
     public static int LowercaseCountCheck(string s)
     {
         return Regex.Matches(s, @"[a-z]").Count;
-        
-  }
+
+    }
     public static string CreatePhoneNumber(int[] numbers)
     {
         string phoneNumber = "";
