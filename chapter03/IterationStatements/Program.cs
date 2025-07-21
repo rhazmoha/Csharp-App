@@ -21,7 +21,13 @@ internal class Program
         WriteLine($"Binary Object as Base64: {encoded}"); */
 
         byte[] file = File.ReadAllBytes("wpf.png");
-        WriteLine(file.Length);
+        string encoded = ToBase64String(file);
+        WriteLine($"{encoded}");
+
+        byte[] file2 = FromBase64String(encoded);
+        File.WriteAllBytes("wpf2.png", file2);
+        WriteLine("end of program");
+
         
         
 
