@@ -4,27 +4,17 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        WriteLine("Before parsing");
-        Write("What is your age? ");
-        string? input = ReadLine();
-
-        /* if (input is null)
-        {
-            WriteLine("You did not enter a value so the app has ended.");
-            return; // Exit the app.
-        } */
-
-        try
-        {
-            int age = int.Parse(input!);
-            WriteLine($"You are {age} years old.");
-        }
-        catch
-        {
-            
-        }
-        WriteLine("After parsing");
+        WriteLine(binaryArrayToNumber(new int[] { 0, 1, 0, 1, 0, 1, 0, 1 }));
 
 
     }
+
+    #region my functions
+
+    public static int binaryArrayToNumber(int[] BinaryArray)
+    {
+        return Convert.ToInt32(string.Join("", BinaryArray), 2);
+
+    }
+    #endregion
 }
