@@ -2,26 +2,23 @@
 using static System.Console;
 using static System.Convert;
 using System.Linq;
+using System.Globalization;
+
 internal class Program
 {
     private static void Main(string[] args)
     {
+        Write("How many eggs are there? ");
+        string? input = ReadLine();
 
-        /* byte[] binaryObject = new byte[128];
-
-        Random.Shared.NextBytes(binaryObject);
-        WriteLine("Binary Object as bytes:");
-
-        for (int index = 0; index < binaryObject.Length; index++)
+        if (int.TryParse(input, out int count))
         {
-            Write($"{binaryObject[index]:X2} ");
+            WriteLine($"There are {count} eggs.");
         }
-        WriteLine();
-
-        string encoded = ToBase64String(binaryObject);
-        WriteLine($"Binary Object as Base64: {encoded}"); */
-
-        WriteLine($"{Maskify("616")}");
+        else
+        {
+            WriteLine("I could not parse the input.");
+        }
 
 
     }
