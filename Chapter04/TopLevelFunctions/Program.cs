@@ -1,8 +1,8 @@
 ﻿using static System.Console;
 
-WriteLine("* Top-level functions example");
 
-WhatsMyNamespace();
+
+Times(3,15);
 
 
 
