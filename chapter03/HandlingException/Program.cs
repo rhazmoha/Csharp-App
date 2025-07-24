@@ -5,7 +5,7 @@ internal class Program
     private static void Main(string[] args)
     {
         WriteLine(binaryArrayToNumber(new int[] { 0, 1, 0, 1, 0, 1, 0, 1 }));
-
+        
 
     }
 
