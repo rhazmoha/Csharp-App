@@ -2,7 +2,8 @@
 
 
 
-Times(3,15);
+RunCardinalToOrdinal();
+
 
 
 
