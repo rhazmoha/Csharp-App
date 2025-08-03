@@ -1,10 +1,17 @@
-﻿using static System.Console;
+﻿using System.ComponentModel;
+using System.Threading.Tasks;
+using static System.Console;
 
 partial class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
-        WriteLine("hello again");
+        while (true)
+        {
+            WriteLine("goodbye hot reload!");
+            await Task.Delay(2000);
+        }
+        
     }
 }
 

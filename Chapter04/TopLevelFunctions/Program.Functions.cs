@@ -3,6 +3,11 @@ using System.Globalization;
 partial class Program
 {
 
+
+    static double Add(double a, double b)
+    {
+        return a * b;
+    }
     static void RunFactorial()
     {
         for (int i = 1; i <= 202; i += 100)
