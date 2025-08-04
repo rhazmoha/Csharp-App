@@ -3,7 +3,13 @@ using System.Globalization;
 partial class Program
 {
 
+    public static string RemoveDuplicateWords(string s)
+    {
+        string[] words = s.Split(new char[] { ' ' });
+        var query = words.Distinct();
 
+        return string.Join(' ', query);
+    }
     static double Add(double a, double b)
     {
         return a * b;

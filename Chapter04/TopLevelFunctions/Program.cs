@@ -7,8 +7,7 @@ partial class Program
 {
     static void Main(string[] args)
     {
-        WriteLine("In Main");
-        Alpha();
+        WriteLine(RemoveDuplicateWords("alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"));
         
     }
 
