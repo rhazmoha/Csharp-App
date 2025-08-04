@@ -4,6 +4,18 @@ namespace CalculatorLibUnitTests;
 
 public class CalculatorUnitTests
 {
+    [Theory]
+    [InlineData(5, 5, 10)]
+    [InlineData(1,2,3)]
+    public void TestAdding(double a, double b, double expected)
+    {
+        Calculator calc = new();
+
+        double actual = calc.Add(a, b);
+
+        Assert.Equal(expected, actual);
+    }
+
     [Fact]
     public void TestAdding2And2()
     {

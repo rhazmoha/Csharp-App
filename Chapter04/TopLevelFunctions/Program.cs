@@ -1,16 +1,13 @@
 ﻿using System.ComponentModel;
 using System.Threading.Tasks;
 using static System.Console;
+using CallStackExceptionHandlingLib;
 
 partial class Program
 {
-    static async Task Main(string[] args)
+    static void Main(string[] args)
     {
-        while (true)
-        {
-            WriteLine("goodbye hot reload!");
-            await Task.Delay(2000);
-        }
+        
         
     }
 }
