@@ -1,0 +1,11 @@
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/obj/Debug/netstandard2.0/PacktLibraryNet2.csproj.AssemblyReference.cache
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/obj/Debug/netstandard2.0/PacktLibraryNet2.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/obj/Debug/netstandard2.0/PacktLibraryNet2.AssemblyInfoInputs.cache
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/obj/Debug/netstandard2.0/PacktLibraryNet2.AssemblyInfo.cs
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/obj/Debug/netstandard2.0/PacktLibraryNet2.csproj.CoreCompileInputs.cache
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/obj/Debug/netstandard2.0/PacktLibraryNet2.sourcelink.json
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/bin/Debug/netstandard2.0/PacktLibraryNet2.deps.json
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/bin/Debug/netstandard2.0/PacktLibraryNet2.dll
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/bin/Debug/netstandard2.0/PacktLibraryNet2.pdb
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/obj/Debug/netstandard2.0/PacktLibraryNet2.dll
+/workspaces/Csharp-App/Chapter05/PacktLibraryNet2/obj/Debug/netstandard2.0/PacktLibraryNet2.pdb
