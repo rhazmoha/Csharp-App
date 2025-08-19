@@ -2,7 +2,7 @@
 using Packt.Shared;
 using Env = System.Environment;
 
-ConfigureConsole(culture: "fr-MA");
+/* ConfigureConsole(culture: "fr-MA");
 
 Person bob = new();
 bob.Name = "Bob Smith";
@@ -28,7 +28,9 @@ Person alice = new()
  TimeSpan.Zero)
 };
 
-WriteLine($"{alice.Name} was born on {alice.Born:d}");
+WriteLine($"{alice.Name} was born on {alice.Born:d}"); */
+
+WriteLine(RemoveUrlAnchor("www.codewars.com?page=1"));
 
 
 

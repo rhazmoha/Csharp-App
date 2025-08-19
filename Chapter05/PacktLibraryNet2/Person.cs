@@ -11,6 +11,8 @@ public class Person : object
     public WondersOfTheAncientWorld FavoriteAncientWonder;
 
     public WondersOfTheAncientWorld BucketList;
+
+    public List<Person> Children = new();
     #endregion
 
     public Person()

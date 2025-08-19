@@ -1,6 +1,7 @@
 
 using System.Globalization;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 partial class Program
 {
 
@@ -24,6 +25,18 @@ partial class Program
     }
 
     #region  codewars solutions
+
+    public static bool ValidPhoneNumber(string phoneNumber)
+    {
+        return Regex.IsMatch(phoneNumber, @"^\(\d+\) \d{3}-\d{4}$");
+    }
+
+    public static string RemoveUrlAnchor(string url)
+    {
+        return Regex.Replace(url, @"(?=#).*", "");
+
+    }
+
     public static string AddBinary(int a, int b)
     {
         return $"{a + b:b}";
