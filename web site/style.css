@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+p:hover {
+    transform: scale(1.1);
+    transition: all 5s ease;
+}
+

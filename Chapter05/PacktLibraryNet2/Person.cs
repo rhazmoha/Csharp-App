@@ -13,6 +13,9 @@ public class Person : object
     public WondersOfTheAncientWorld BucketList;
 
     public List<Person> Children = new();
+
+    public const string Species = "human";
+    
     #endregion
 
     public Person()
