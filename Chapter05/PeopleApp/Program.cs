@@ -62,7 +62,7 @@ WriteLine($"{bob.Name} is a {Person.Species}");
 uint m = 0x8000_0000;
 WriteLine($"int.MinValue : {int.MinValue}, m {m}");
 
-
+WriteLine($"{bob.Name} was born on {bob.HomePlanet}.");
 
 
 
