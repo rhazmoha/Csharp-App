@@ -17,3 +17,5 @@
 /workspaces/Csharp-App/Chapter05/PeopleApp/obj/Debug/net8.0/PeopleApp.pdb
 /workspaces/Csharp-App/Chapter05/PeopleApp/obj/Debug/net8.0/PeopleApp.genruntimeconfig.cache
 /workspaces/Csharp-App/Chapter05/PeopleApp/obj/Debug/net8.0/ref/PeopleApp.dll
+/workspaces/Csharp-App/Chapter05/PeopleApp/bin/Debug/net8.0/PacktLibraryModern.dll
+/workspaces/Csharp-App/Chapter05/PeopleApp/bin/Debug/net8.0/PacktLibraryModern.pdb
