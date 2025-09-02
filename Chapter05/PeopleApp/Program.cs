@@ -2,7 +2,7 @@
 using Packt.Shared;
 using Env = System.Environment;
 
-ConfigureConsole(culture: "fr-MA");
+ConfigureConsole(culture: "en-USA");
 
 Person bob = new();
 bob.Name = "Bob Smith";
@@ -64,14 +64,46 @@ WriteLine($"int.MinValue : {int.MinValue}, m {m}");
 
 WriteLine($"{bob.Name} was born on {bob.HomePlanet}.");
 
-Book book = new()
+/*Book book = new()
 {
     Isbn = "978-1803237800",
     Title = "C# 12 and .NET 8 - Modern Cross-Platform Development Fundamentals"
 };
+*/
+
+Book book = new Book(isbn: "978-1803237800",
+title: "C# 12 and .NET 8 - Modern Cross-Platform Development Fundamentals")
+{
+    Author = "Mark J. Price",
+    PageCount = 821
+};
+
+
 
 WriteLine("{0}: {1} written by {2} has {3:N0} pages.",
  book.Isbn, book.Title, book.Author, book.PageCount);
+
+Person blankPerson = new();
+WriteLine(format:
+ "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
+ arg0: blankPerson.Name,
+ arg1: blankPerson.HomePlanet,
+ arg2: blankPerson.Instantiated);
+
+Person gunny = new Person(initialName: "Gunny", homePlanet: "Mars");
+
+WriteLine(format:
+ "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
+ arg0: gunny.Name,
+ arg1: gunny.HomePlanet,
+ arg2: gunny.Instantiated);
+
+
+bob.WriteToConsole();
+WriteLine(bob.GetOrigin());
+
+WriteLine(bob.SayHello());
+WriteLine(bob.SayHelloTo("Emily"));
 
 
 
