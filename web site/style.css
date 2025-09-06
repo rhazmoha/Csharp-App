@@ -4,5 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+  display:  flex;
+  flex-wrap: wrap;
 
+}
+
+body>div {
+  border : 1px solid black;
+ 
+}
+
+#left, #right {
+  width : 30%
+}
+
+#center {
+  flex : 1;
+}
 
