@@ -1,0 +1,15 @@
+/workspaces/Csharp-App/CsharpTuto/MyTuto/bin/Debug/net8.0/MyTuto
+/workspaces/Csharp-App/CsharpTuto/MyTuto/bin/Debug/net8.0/MyTuto.deps.json
+/workspaces/Csharp-App/CsharpTuto/MyTuto/bin/Debug/net8.0/MyTuto.runtimeconfig.json
+/workspaces/Csharp-App/CsharpTuto/MyTuto/bin/Debug/net8.0/MyTuto.dll
+/workspaces/Csharp-App/CsharpTuto/MyTuto/bin/Debug/net8.0/MyTuto.pdb
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/MyTuto.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/MyTuto.AssemblyInfoInputs.cache
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/MyTuto.AssemblyInfo.cs
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/MyTuto.csproj.CoreCompileInputs.cache
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/MyTuto.sourcelink.json
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/MyTuto.dll
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/refint/MyTuto.dll
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/MyTuto.pdb
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/MyTuto.genruntimeconfig.cache
+/workspaces/Csharp-App/CsharpTuto/MyTuto/obj/Debug/net8.0/ref/MyTuto.dll

@@ -1,76 +1,8 @@
-/* Style global */
-body {
+* {
   margin: 0;
-  font-family: 'Nunito', sans-serif;
-  background: linear-gradient(135deg, #f5f5dc, #e8f5e9); /* beige -> vert très clair */
-  color: #1b4332;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Conteneur central */
-.container {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  max-width: 420px;
-  width: 90%;
-}
 
-/* Logo + titre */
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.logo .icon {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.logo h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #2e7d32; /* vert forêt */
-  margin: 0;
-}
-
-.subtitle {
-  font-size: 0.95rem;
-  color: #4e342e; /* marron terre */
-  margin-top: 5px;
-}
-
-/* Boutons */
-.btn {
-  display: inline-block;
-  background: #2e7d32; /* vert forêt */
-  color: white;
-  padding: 12px 20px;
-  margin: 10px 0;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-  background: #1b5e20; /* vert plus foncé */
-  transform: translateY(-2px);
-}
-
-/* Variante secondaire */
-.btn.secondary {
-  background: #8d6e63; /* marron */
-}
-
-.btn.secondary:hover {
-  background: #5d4037; /* marron foncé */
-}
 
