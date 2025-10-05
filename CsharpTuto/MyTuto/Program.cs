@@ -1,12 +1,12 @@
 ﻿using System;
-using MyTuto.Lambdas;
+
 
 internal class Program
 {
     private static void Main(string[] args)
     {
         
-
+       
 
 
 
