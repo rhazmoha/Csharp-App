@@ -1,0 +1,15 @@
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/bin/Debug/net8.0/TodoList
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/bin/Debug/net8.0/TodoList.deps.json
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/bin/Debug/net8.0/TodoList.runtimeconfig.json
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/bin/Debug/net8.0/TodoList.dll
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/bin/Debug/net8.0/TodoList.pdb
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/TodoList.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/TodoList.AssemblyInfoInputs.cache
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/TodoList.AssemblyInfo.cs
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/TodoList.csproj.CoreCompileInputs.cache
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/TodoList.sourcelink.json
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/TodoList.dll
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/refint/TodoList.dll
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/TodoList.pdb
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/TodoList.genruntimeconfig.cache
+/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/Debug/net8.0/ref/TodoList.dll
