@@ -1,8 +1,7 @@
-﻿
-// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 
 
-using System.Runtime.CompilerServices;
+
 
 Console.WriteLine("Hello!");
 Console.WriteLine("What do you want to do?");
@@ -13,7 +12,7 @@ Console.WriteLine("[E]xit");
 
 string userChoice = Console.ReadLine();
 int number = int.Parse(userChoice);
-System.Console.WriteLine(number);
+System.Console.WriteLine($"number is {number}");
 
 
 /* if (userChoice == "S")
@@ -34,6 +33,10 @@ else if (userChoice == "E")
 
 } */
 
+string FormatDate(int year, int month, int day)
+{
+    return $"{year}/{month}/{day}";
+}
 
 bool IsLong(string input)
 {
