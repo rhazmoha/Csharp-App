@@ -11,19 +11,10 @@ Console.WriteLine("[A]dd a TODO");
 Console.WriteLine("[R]emove a TODO");
 Console.WriteLine("[E]xit");
 
-var userChoice = Console.ReadLine();
-bool isLong = IsLong(userChoice);
+string userChoice = Console.ReadLine();
+int number = int.Parse(userChoice);
+System.Console.WriteLine(number);
 
-bool IsLong(string input)
-{
-    if(input.Length > 10)
-    {
-        return true;
-    }else
-    {
-        return false;
-    }
-}
 
 /* if (userChoice == "S")
 {
@@ -44,9 +35,19 @@ else if (userChoice == "E")
 } */
 
 
-
+bool IsLong(string input)
+{
+    return input.Length > 10;
+}
 
 void PrintSelectedOption(string selectedOption)
 {
     System.Console.WriteLine("Selected Option: " + selectedOption);
 }
+
+
+#region Exercises
+
+
+
+#endregion
