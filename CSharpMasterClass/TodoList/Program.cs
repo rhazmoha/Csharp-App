@@ -1,6 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+System.Console.WriteLine(CalculateSumOfNumbersBetween(1, 10));
+return;
+System.Console.WriteLine("Enter a word");
+var userInput = Console.ReadLine();
 
+while(userInput.Length < 15)
+{
+    userInput = userInput + 'a';
+    System.Console.WriteLine(userInput);
+}
+
+System.Console.WriteLine("the loop is finished");
 
 
 Console.WriteLine("Hello!");
@@ -11,31 +22,46 @@ Console.WriteLine("[R]emove a TODO");
 Console.WriteLine("[E]xit");
 
 string userChoice = Console.ReadLine();
-int number = int.Parse(userChoice);
-System.Console.WriteLine($"number is {number}");
 
 
-/* if (userChoice == "S")
+switch (userChoice)
 {
-    PrintSelectedOption("See All TODOs");
+    case "S":
+        PrintSelectedOption("See All TODOs");
+        break;
+
+    case "A":
+        PrintSelectedOption("Add a TODO");
+        break;
+
+    case "R":
+        PrintSelectedOption("Remove a TODO");
+        break;
+
+    case "E":
+        PrintSelectedOption("Exit");
+        break;
+
+    default:
+        System.Console.WriteLine("Invalid choice");
+        break;
+
 }
-else if (userChoice == "A")
-{
-    PrintSelectedOption("Add a TODO");
-}
-else if (userChoice == "R")
-{
-    PrintSelectedOption("Remove a TODO");
-}
-else if (userChoice == "E")
-{
-    PrintSelectedOption("Exit");
 
-} */
 
-string FormatDate(int year, int month, int day)
+
+char ConvertPointsToGrade(int points)
 {
-    return $"{year}/{month}/{day}";
+
+    return points switch
+    {
+        >= 90 => 'A',
+        >= 80 => 'B',
+        >= 70 => 'C',
+    _ => 'D'
+    };
+
+    
 }
 
 bool IsLong(string input)
@@ -51,6 +77,17 @@ void PrintSelectedOption(string selectedOption)
 
 #region Exercises
 
+int CalculateSumOfNumbersBetween(int start, int end)
+{
+    int sum = 0;
+    while (start <= end)
+    {
+        sum += start;
+        start++;
+    }
+
+    return sum;
+}
 
 
 #endregion
