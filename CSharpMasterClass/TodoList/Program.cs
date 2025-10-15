@@ -1,7 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+System.Console.WriteLine(IsWordPresentInCollection(new string[] {"one", "two", "three"}, "two"));
 
-System.Console.WriteLine(CalculateSumOfNumbersBetween(1, 10));
 return;
+
 System.Console.WriteLine("Enter a word");
 var userInput = Console.ReadLine();
 
@@ -77,16 +78,17 @@ void PrintSelectedOption(string selectedOption)
 
 #region Exercises
 
-int CalculateSumOfNumbersBetween(int start, int end)
+bool  IsWordPresentInCollection(string[] words, string wordToBeChecked)
 {
-    int sum = 0;
-    while (start <= end)
+    for (int i = 0; i < words.Length; ++i)
     {
-        sum += start;
-        start++;
+        if (words[i] == wordToBeChecked)
+        {
+            return true;
+        }
     }
 
-    return sum;
+    return false;
 }
 
 
