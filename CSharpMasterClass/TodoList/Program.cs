@@ -118,16 +118,6 @@ do
 } while (userChoice != "E");
 
 
-
-
-
-
-
-
-
-
-
-
 #region Exercises
 
 
