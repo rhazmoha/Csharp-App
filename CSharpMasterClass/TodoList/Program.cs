@@ -40,8 +40,6 @@ do
             break;
 
         case "A":
-
-            
             string toDoDescription;
             do
             {
@@ -58,10 +56,10 @@ do
                     if (listTodo.Contains(toDoDescription))
                     {
                         System.Console.WriteLine("The description must be unique.");
-                        
+
                     }
                 }
-                
+
             } while (toDoDescription == "" || listTodo.Contains(toDoDescription));
 
             listTodo.Add(toDoDescription);
@@ -69,6 +67,44 @@ do
             break;
 
         case "R":
+
+            if (listTodo.Count == 0)
+            {
+                System.Console.WriteLine("No TODOs have been added yet.");
+            }
+            else
+            {
+                string userInput;
+                int index;
+
+                do
+                {
+                    System.Console.WriteLine("Select the index of the TODO you want to remove:");
+                    for (int i = 0; i < listTodo.Count; i++)
+                    {
+                        System.Console.WriteLine($"{i + 1}. {listTodo[i]}");
+                    }
+
+                    userInput = Console.ReadLine();
+
+                    if (userInput == "")
+                    {
+                        System.Console.WriteLine("Selected index cannot be empty.");
+                    }
+                    else if (!int.TryParse(userInput, out index))
+                    {
+                        System.Console.WriteLine("The given index is not valid.");
+
+                    }
+
+                } while (userInput == "" || !int.TryParse(userInput, out index));
+
+
+                listTodo.RemoveAt(index - 1);
+
+            }
+
+
             break;
 
         case "E":
