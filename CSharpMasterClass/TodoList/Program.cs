@@ -40,6 +40,32 @@ do
             break;
 
         case "A":
+
+            
+            string toDoDescription;
+            do
+            {
+                System.Console.WriteLine("Enter the TODO description");
+                toDoDescription = Console.ReadLine();
+
+                if (toDoDescription == "")
+                {
+                    System.Console.WriteLine("The description cannot be empty.");
+
+                }
+                else
+                {
+                    if (listTodo.Contains(toDoDescription))
+                    {
+                        System.Console.WriteLine("The description must be unique.");
+                        
+                    }
+                }
+                
+            } while (toDoDescription == "" || listTodo.Contains(toDoDescription));
+
+            listTodo.Add(toDoDescription);
+            System.Console.WriteLine($"TODO successfully added: {toDoDescription}");
             break;
 
         case "R":
