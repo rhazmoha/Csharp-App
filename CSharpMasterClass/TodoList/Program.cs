@@ -1,4 +1,5 @@
-﻿string userChoice;
+﻿/* 
+string userChoice;
 var listTodo = new List<string>();
 
 Console.WriteLine("Hello!");
@@ -78,10 +79,13 @@ do
             {
                 string userInput;
                 int index;
+                bool isValidIndex = false;
+                
 
                 do
                 {
                     System.Console.WriteLine("Select the index of the TODO you want to remove:");
+
                     for (int i = 0; i < listTodo.Count; i++)
                     {
                         System.Console.WriteLine($"{i + 1}. {listTodo[i]}");
@@ -93,16 +97,25 @@ do
                     {
                         System.Console.WriteLine("Selected index cannot be empty.");
                     }
-                    else if (!int.TryParse(userInput, out index))
+                    else
                     {
-                        System.Console.WriteLine("The given index is not valid.");
+                        isValidIndex = int.TryParse(userInput, out index);
+
+                        if (!isValidIndex)
+                        {
+                            System.Console.WriteLine("The given index is not valid.");
+                        }else
+                        {
+                            var deletedTodoList = listTodo[index - 1];
+                            System.Console.WriteLine($"TODO removed: {deletedTodoList}");
+                            listTodo.RemoveAt(index - 1);
+                            
+                        }
+                        
 
                     }
 
-                } while (userInput == "" || !int.TryParse(userInput, out index));
-
-
-                listTodo.RemoveAt(index - 1);
+                } while (userInput == "" || !isValidIndex);
 
             }
 
@@ -120,6 +133,63 @@ do
 
 } while (userChoice != "E");
 
+
+#endregion
+
+ */
+
+var todos = new List<string>();
+
+Console.WriteLine("Hello!");
+
+bool shallExit = false;
+while (!shallExit)
+{
+    Console.WriteLine("What do you want to do?");
+    Console.WriteLine("[S]ee all TODOs");
+    Console.WriteLine("[A]dd a TODO");
+    Console.WriteLine("[R]emove a TODO");
+    Console.WriteLine("[E]xit");
+
+    var userChoice = Console.ReadLine().ToUpper();
+
+    switch (userChoice)
+    {
+        case "E":
+            shallExit = true;
+            break;
+        case "S":
+            System.Console.WriteLine("See all TODOs");
+            break;
+        case "A":
+            System.Console.WriteLine("Add a TODO");
+            break;
+        case "R":
+            System.Console.WriteLine("Remove a TODO");
+            break;
+
+        default:
+            System.Console.WriteLine("Invalid choice");
+            break;
+    }
+}
+
+void AddTodo()
+{
+    System.Console.WriteLine("Enter TODO description");
+    var description = Console.ReadLine();
+
+    if(description == "")
+    {
+        System.Console.WriteLine("the description cannot be empty");
+    }else if (todos.Contains(description))
+    {
+        System.Console.WriteLine("The description must be unique");
+    }else
+    {
+        
+    }
+}
 
 #region Exercises
 
