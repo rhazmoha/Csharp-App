@@ -1,14 +1,11 @@
 ﻿string userChoice;
-var listTodo = new List<string>()
-{
-    "make a cake",
-"watch TV"
-};
+var listTodo = new List<string>();
 
+Console.WriteLine("Hello!");
 
 do
 {
-    Console.WriteLine("Hello!");
+    
     Console.WriteLine("What do you want to do?");
     Console.WriteLine("[S]ee all TODOs");
     Console.WriteLine("[A]dd a TODO");
@@ -41,6 +38,8 @@ do
 
         case "A":
             string toDoDescription;
+            bool isTodoExists = true;
+
             do
             {
                 System.Console.WriteLine("Enter the TODO description");
@@ -53,17 +52,20 @@ do
                 }
                 else
                 {
-                    if (listTodo.Contains(toDoDescription))
+                    isTodoExists = listTodo.Contains(toDoDescription);
+
+                    if (isTodoExists)
                     {
                         System.Console.WriteLine("The description must be unique.");
 
                     }
                 }
 
-            } while (toDoDescription == "" || listTodo.Contains(toDoDescription));
+            } while (toDoDescription == "" || isTodoExists);
 
             listTodo.Add(toDoDescription);
             System.Console.WriteLine($"TODO successfully added: {toDoDescription}");
+            System.Console.WriteLine();
             break;
 
         case "R":
@@ -104,11 +106,12 @@ do
 
             }
 
-
+            System.Console.WriteLine();
             break;
 
         case "E":
             break;
+
         default:
             System.Console.WriteLine("Incorrect input");
             break;
