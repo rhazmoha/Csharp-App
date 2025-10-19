@@ -241,7 +241,7 @@ void RemoveTodo()
     }
 
     int index;
-    do
+    do  
     {
         System.Console.WriteLine("Select the index of TODO you want to remove");
         seeAllTodos();

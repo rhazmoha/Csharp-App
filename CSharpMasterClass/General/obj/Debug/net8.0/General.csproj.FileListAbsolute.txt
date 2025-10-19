@@ -1,0 +1,15 @@
+/workspaces/Csharp-App/CSharpMasterClass/General/bin/Debug/net8.0/General
+/workspaces/Csharp-App/CSharpMasterClass/General/bin/Debug/net8.0/General.deps.json
+/workspaces/Csharp-App/CSharpMasterClass/General/bin/Debug/net8.0/General.runtimeconfig.json
+/workspaces/Csharp-App/CSharpMasterClass/General/bin/Debug/net8.0/General.dll
+/workspaces/Csharp-App/CSharpMasterClass/General/bin/Debug/net8.0/General.pdb
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/General.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/General.AssemblyInfoInputs.cache
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/General.AssemblyInfo.cs
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/General.csproj.CoreCompileInputs.cache
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/General.sourcelink.json
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/General.dll
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/refint/General.dll
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/General.pdb
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/General.genruntimeconfig.cache
+/workspaces/Csharp-App/CSharpMasterClass/General/obj/Debug/net8.0/ref/General.dll
