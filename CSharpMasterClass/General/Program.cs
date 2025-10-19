@@ -7,7 +7,54 @@ System.Console.WriteLine($"height is: {rectangle1.Height}");
 System.Console.WriteLine($"Area is {calculator.CalculateRectangleArea(rectangle1)}");
 System.Console.WriteLine($"Perimiter is {calculator.CalculateRectanglePerimiter(rectangle1)}");
 
+class MedicalAppointmentPinter
+{
+    public void Print(MedicalAppointment medicalAppointment)
+    {
+        System.Console.WriteLine($"Appointment will take place on {medicalAppointment.GetDate()}");
+    }
+}
 
+class MedicalAppointment
+{
+    private string _patientName;
+    private DateTime _date;
+
+    public MedicalAppointment(string patientName, DateTime date)
+    {
+        _patientName = patientName;
+        _date = date;
+    }
+
+    public MedicalAppointment(string patientName) :
+    this(patientName, 7)
+    {
+
+    }
+
+    public MedicalAppointment(string patientName, int daysFromNow)
+    {
+        _patientName = patientName;
+        _date = DateTime.Now.AddDays(daysFromNow);
+    }
+
+    public DateTime GetDate() => _date;
+    public void Reschedule(DateTime date)
+    {
+        _date = date;
+        var printer = new MedicalAppointmentPinter();
+        printer.Print(this);
+    }
+
+    public void Reschedule(int month, int day)
+    {
+        _date = new DateTime(_date.Year, month, day);
+    }
+
+
+
+
+}
 class Rectangle
 {
     public int Width = 3;
@@ -19,15 +66,15 @@ class Rectangle
         Height = height;
     }
 
-   public int CalculatePerimiter()
-    {
-        return 2 * Width + 2 * Height;
-    }
+    public int CalculatePerimiter() => 2 * Width + 2 * Height;
+    
+        
+    
 
-   public int CalcultateArea()
-    {
-        return Width * Height;
-    }
+    public int CalcultateArea() => Width * Height;
+    
+        
+    
 
 }
 
