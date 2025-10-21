@@ -73,7 +73,7 @@ class Rectangle
             Width = width;
         }
 
-        Width = width;
+        
         Height = height;
     }
 
