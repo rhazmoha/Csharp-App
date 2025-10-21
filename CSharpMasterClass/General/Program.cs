@@ -1,7 +1,6 @@
 ﻿
 
-using System.Runtime;
-using System.Runtime.InteropServices;
+
 
 var rectangle1 = new Rectangle(10, 5);
 var calculator = new ShapeMeasurementsCalculator();
@@ -53,11 +52,8 @@ class MedicalAppointment
     {
         _date = new DateTime(_date.Year, month, day);
     }
-
-
-
-
 }
+
 class Rectangle
 {
     public int Width = 3;
@@ -65,19 +61,31 @@ class Rectangle
 
     public Rectangle(int width, int height)
     {
+        int defaulValueIfNonPositive = 1;
+
+        if (width <= 0)
+        {
+            Console.WriteLine("Width must be a positive number");
+            width = defaulValueIfNonPositive;
+        }
+        else
+        {
+            Width = width;
+        }
+
         Width = width;
         Height = height;
     }
 
     public int CalculatePerimiter() => 2 * Width + 2 * Height;
-    
-        
-    
+
+
+
 
     public int CalcultateArea() => Width * Height;
-    
-        
-    
+
+
+
 
 }
 
@@ -129,14 +137,14 @@ class Triangle
 
     public string AsString()
     {
-       return $"Base is {_base}, Height is {_height}";
+        return $"Base is {_base}, Height is {_height}";
     }
 
 }
 
 public class Dog
 {
-   private string _name;
+    private string _name;
     private string _breed;
 
     private int _weight;
@@ -148,10 +156,10 @@ public class Dog
         _weight = weight;
     }
 
-    public Dog(string name, int weight, string breed = "mixed-breed")
+    public Dog(string name, int weight) : this(name, "mixed-breed", weight)
     {
         _name = name;
-        _weight= weight;
+        _weight = weight;
 
     }
 
@@ -159,10 +167,11 @@ public class Dog
     {
         string size;
 
-        if (_weight > 30)   
+        if (_weight > 30)
         {
             size = "large";
-        }else if(_weight >= 5)
+        }
+        else if (_weight >= 5)
         {
             size = "medium";
         }
