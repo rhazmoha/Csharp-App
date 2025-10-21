@@ -1,4 +1,7 @@
-﻿//hello mohammed
+﻿
+
+using System.Runtime;
+using System.Runtime.InteropServices;
 
 var rectangle1 = new Rectangle(10, 5);
 var calculator = new ShapeMeasurementsCalculator();
@@ -128,5 +131,51 @@ class Triangle
     {
        return $"Base is {_base}, Height is {_height}";
     }
+
+}
+
+public class Dog
+{
+   private string _name;
+    private string _breed;
+
+    private int _weight;
+
+    public Dog(string name, string breed, int weight)
+    {
+        _name = name;
+        _breed = breed;
+        _weight = weight;
+    }
+
+    public Dog(string name, int weight, string breed = "mixed-breed")
+    {
+        _name = name;
+        _weight= weight;
+
+    }
+
+    public string Describe()
+    {
+        string size;
+
+        if (_weight > 30)   
+        {
+            size = "large";
+        }else if(_weight >= 5)
+        {
+            size = "medium";
+        }
+        else
+        {
+            size = "tiny";
+        }
+
+
+        return $"This dog is named {_name}, it's {_breed}, and it weighs {_weight}, so it's a {size} dog";
+    }
+
+
+
 
 }
