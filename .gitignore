@@ -2,4 +2,4 @@
 # Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/Csharp-App/FileContentIndex/dda115bd-972a-495e-85cb-235f6ffb9976.vsidx
+.vs/

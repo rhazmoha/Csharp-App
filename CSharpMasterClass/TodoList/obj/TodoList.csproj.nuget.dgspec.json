@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/Csharp-App/CSharpMasterClass/TodoList/TodoList.csproj": {}
+    "C:\\Users\\PC\\Desktop\\Csharp-App\\CSharpMasterClass\\TodoList\\TodoList.csproj": {}
   },
   "projects": {
-    "/workspaces/Csharp-App/CSharpMasterClass/TodoList/TodoList.csproj": {
+    "C:\\Users\\PC\\Desktop\\Csharp-App\\CSharpMasterClass\\TodoList\\TodoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/Csharp-App/CSharpMasterClass/TodoList/TodoList.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\Csharp-App\\CSharpMasterClass\\TodoList\\TodoList.csproj",
         "projectName": "TodoList",
-        "projectPath": "/workspaces/Csharp-App/CSharpMasterClass/TodoList/TodoList.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/Csharp-App/CSharpMasterClass/TodoList/obj/",
+        "projectPath": "C:\\Users\\PC\\Desktop\\Csharp-App\\CSharpMasterClass\\TodoList\\TodoList.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\Csharp-App\\CSharpMasterClass\\TodoList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +39,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -58,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
