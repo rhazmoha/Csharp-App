@@ -11,8 +11,8 @@
 //System.Console.WriteLine($"Area is {calculator.CalculateRectangleArea(rectangle1)}");
 //System.Console.WriteLine($"Perimiter is {calculator.CalculateRectanglePerimiter(rectangle1)}");
 
-
-
+var order = new Order("1", DateTime.Now) { Date = DateTime.Now.AddDays(1) };
+Console.WriteLine(order.Date);
 
 class MedicalAppointmentPinter
 {
@@ -227,7 +227,7 @@ class Order
         Item = item;
         Date = date;
     }
-    public string Item { get; } = "my item";
+    public string Item { get;  } = "my item";
 
     private DateTime _date;
     public DateTime Date
