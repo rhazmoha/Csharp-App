@@ -1,14 +1,17 @@
 ﻿
 
 
+
+
 //var rectangle1 = new Rectangle(10, 5);
 //var calculator = new ShapeMeasurementsCalculator();
 //System.Console.WriteLine($"Width is: {rectangle1.Width}");
+
 //System.Console.WriteLine($"height is: {rectangle1.Height}");
 //System.Console.WriteLine($"Area is {calculator.CalculateRectangleArea(rectangle1)}");
 //System.Console.WriteLine($"Perimiter is {calculator.CalculateRectanglePerimiter(rectangle1)}");
 
-var rect = new Rectangle(10, 12);
+
 
 
 class MedicalAppointmentPinter
@@ -58,9 +61,8 @@ class MedicalAppointment
 
 class Rectangle
 {
-    public const int NumberOfSides = 4;
-    public readonly int NumberOfSidesReadOnly = 4;
-    public readonly int Width;
+   
+    //private  int _width;
     private  int _height;
 
     public Rectangle(int width, int height)
@@ -68,13 +70,24 @@ class Rectangle
         Width = GetLengthOrDefault(width, nameof(Width));
         _height = GetLengthOrDefault(height, nameof(_height));
 
+        
+    }
 
+
+    public int Width { get; }
+    
+
+    public int Height
+    {
+        get => _height;
+        
     }
 
    public int GetHeight() => _height;
 
     public void SetHeight(int value)
     {
+        
         if (value >= 0)
         {
             _height = value;
@@ -111,12 +124,12 @@ class ShapeMeasurementsCalculator
 {
     public int CalculateRectanglePerimiter(Rectangle rectangle)
     {
-        return 2 * rectangle.Width + 2 * rectangle._height;
+        return 2 * rectangle.Width + 2 * rectangle.Height;
     }
 
     public int CalculateRectangleArea(Rectangle rectangle)
     {
-        return rectangle.Width * rectangle._height;
+        return rectangle.Width * rectangle.Height;
     }
 }
 class HotelBooking
@@ -204,5 +217,36 @@ public class Dog
 
 
 
+
+}
+
+class Order
+{
+    public Order(string item, DateTime date)
+    {
+        Item = item;
+        Date = date;
+    }
+    public string Item { get; } = "my item";
+
+    private DateTime _date;
+    public DateTime Date
+    {
+        get
+        {
+
+            return _date;
+        }
+
+        set
+        {
+            if (value.Year == DateTime.Now.Year)
+            {
+                _date = value;
+            }
+        }
+
+
+    }
 
 }
