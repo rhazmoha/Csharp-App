@@ -61,20 +61,27 @@ class Rectangle
 
     public Rectangle(int width, int height)
     {
+       
+
+        Width = GetLengthOrDefault(width, nameof(Width));
+        Height = GetLengthOrDefault(height, nameof(Height));
+
+
+
+    }
+
+    private int GetLengthOrDefault(int length, string name)
+    {
         int defaulValueIfNonPositive = 1;
 
-        if (width <= 0)
+        if(length <= 0)
         {
-            Console.WriteLine("Width must be a positive number");
-            width = defaulValueIfNonPositive;
-        }
-        else
-        {
-            Width = width;
+            Console.WriteLine($"{name} must be a positive number");
+            return defaulValueIfNonPositive;
         }
 
-        
-        Height = height;
+        return length;
+
     }
 
     public int CalculatePerimiter() => 2 * Width + 2 * Height;
