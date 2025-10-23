@@ -1,8 +1,4 @@
 ﻿
-
-
-
-
 //var rectangle1 = new Rectangle(10, 5);
 //var calculator = new ShapeMeasurementsCalculator();
 //System.Console.WriteLine($"Width is: {rectangle1.Width}");
@@ -11,8 +7,16 @@
 //System.Console.WriteLine($"Area is {calculator.CalculateRectangleArea(rectangle1)}");
 //System.Console.WriteLine($"Perimiter is {calculator.CalculateRectanglePerimiter(rectangle1)}");
 
-var order = new Order("1", DateTime.Now) { Date = DateTime.Now.AddDays(1) };
-Console.WriteLine(order.Date);
+var person = new Person("john")
+{
+   
+    YearOfBirth = 1981
+};
+
+Console.WriteLine(person.Name);
+
+
+Console.WriteLine("End of program");
 
 class MedicalAppointmentPinter
 {
@@ -250,3 +254,28 @@ class Order
     }
 
 }
+
+
+class Person
+{
+    public string Name { get; init; }
+    public int YearOfBirth { get; init; }
+
+    public Person(string name)
+    {
+        Name = name;
+    }
+    //public Person(string name, int yearOfBirth)
+    //{
+    //    Name = name;
+    //    YearOfBirth = yearOfBirth;
+    //}
+}
+
+
+
+
+
+
+
+
