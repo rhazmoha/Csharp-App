@@ -7,9 +7,18 @@
 //System.Console.WriteLine($"Area is {calculator.CalculateRectangleArea(rectangle1)}");
 //System.Console.WriteLine($"Perimiter is {calculator.CalculateRectanglePerimiter(rectangle1)}");
 
-Console.WriteLine(NumberToDayOfWeekTranslator.Translate(56));
+Console.WriteLine(TransformSeparators("this,is,some,string", ",","-"));
 
 Console.WriteLine("End of program");
+
+
+string TransformSeparators(string input, string originalSeparator, string targetSeparator)
+{
+    string[] words = input.Split(originalSeparator);
+
+    return string.Join(targetSeparator, words);
+
+}
 
 class MedicalAppointmentPinter
 {
@@ -58,6 +67,15 @@ class MedicalAppointment
 
 class Rectangle
 {
+    private static DateTime _firstUsed;
+
+    static Rectangle()
+    {
+        _firstUsed = DateTime.Now;
+    }
+
+    public static int CountOfInstances { get; private set; }
+
     public const int NumberOfSides = 4;
 
     //private  int _width;
@@ -67,6 +85,10 @@ class Rectangle
     {
         Width = GetLengthOrDefault(width, nameof(Width));
         _height = GetLengthOrDefault(height, nameof(_height));
+
+        ++CountOfInstances;
+
+       
         
     }
 
