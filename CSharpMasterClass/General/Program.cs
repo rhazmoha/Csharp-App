@@ -7,14 +7,7 @@
 //System.Console.WriteLine($"Area is {calculator.CalculateRectangleArea(rectangle1)}");
 //System.Console.WriteLine($"Perimiter is {calculator.CalculateRectanglePerimiter(rectangle1)}");
 
-var person = new Person("john")
-{
-   
-    YearOfBirth = 1981
-};
-
-Console.WriteLine(person.Name);
-
+Console.WriteLine(NumberToDayOfWeekTranslator.Translate(56));
 
 Console.WriteLine("End of program");
 
@@ -65,7 +58,8 @@ class MedicalAppointment
 
 class Rectangle
 {
-   
+    public const int NumberOfSides = 4;
+
     //private  int _width;
     private  int _height;
 
@@ -73,19 +67,18 @@ class Rectangle
     {
         Width = GetLengthOrDefault(width, nameof(Width));
         _height = GetLengthOrDefault(height, nameof(_height));
-
         
     }
 
-
     public int Width { get; }
     
-
     public int Height
     {
         get => _height;
         
     }
+
+    public string Description => $"A rectangle with width {Width} and height {Height}";
 
    public int GetHeight() => _height;
 
@@ -113,11 +106,9 @@ class Rectangle
     }
 
     public int CalculatePerimiter() => 2 * Width + 2 * _height;
-
-
-
-
     public int CalcultateArea() => Width * _height;
+
+    public static string DescribeGenerally() => "A plane figure";
 
 
 
@@ -255,7 +246,6 @@ class Order
 
 }
 
-
 class Person
 {
     public string Name { get; init; }
@@ -270,6 +260,61 @@ class Person
     //    Name = name;
     //    YearOfBirth = yearOfBirth;
     //}
+}
+
+class DailyAccountState
+{
+    public DailyAccountState(int initialState, int sumOfOperations)
+    {
+        InitialState = initialState;
+        SumOfOperations = sumOfOperations;
+    }
+    public int InitialState { get; }
+
+    public int SumOfOperations { get; }
+
+    public int EndOfDayState => InitialState + SumOfOperations;
+
+    public string Report
+    {
+        get
+        {
+            DateTime today = DateTime.Today;
+
+            return $"Day: {today.Day}, month: {today.Month}, year: {today.Year}, initial state: {InitialState}, end of day state: {EndOfDayState}";
+        }
+    }
+
+
+}
+
+static class Calculator
+{
+    public static int Add(int a, int b) => a + b;
+    
+}
+
+static class NumberToDayOfWeekTranslator
+{
+
+    public static string Translate(int number)
+    {
+        return number switch
+        {
+            1 => "Monday",
+            2 => "Tuesday",
+            3 => "wednesday",
+            4 => "Thursday",
+            5 => "Friday",
+            6 => "Saturday",
+            7 => "Sunday",
+            _ => "Invalid day of the week"
+        };
+
+
+
+    }
+
 }
 
 
